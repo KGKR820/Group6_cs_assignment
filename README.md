@@ -26,7 +26,7 @@ Each member is responsible for implementing and explaining their assigned vulner
 | Durga Surya Raghuram Gadepalli | IIT2024093| CSRF | GET-Based Forged Action |
 | [Friend 2] | [Roll Number] | [Category] | [Variant] |
 | [Friend 3] | [Roll Number] | [Category] | [Variant] |
-| [Friend 4] | [Roll Number] | [Category] | [Variant] |
+|  Gireesh Kumar Reddy Kunamreddy | IIT2024106 | OS command injection| In-band (command output returned) |
 |[Friend 5]         | [Roll number] |[Category]|  [Variant]|
 
 **Note:** Each member should fill in their own details and ensure that their individual implementation and contribution are identifiable.

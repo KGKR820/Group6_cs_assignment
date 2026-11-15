@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Network Diagnostic Utility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <span class="badge">Tool</span>
+      <h1>Network Diagnostics</h1>
+      <p>Ping a hostname or IP address to test connectivity.</p>
+    </header>
+
+    <form id="pingForm" class="form-container">
+      <div class="input-wrapper">
+        <input id="host" type="text" placeholder="e.g. 127.0.0.1 or google.com" value="127.0.0.1" required autocomplete="off">
+      </div>
+      <div class="button-layout">
+        <button type="submit" id="pingBtn" class="btn btn-primary">Run Ping</button>
+        <button type="button" id="clearBtn" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+
+    <div class="panel">
+      <div class="panel-title">Command Executed</div>
+      <pre id="command" class="terminal">-</pre>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Server Output</div>
+      <pre id="output" class="terminal">Waiting for input...</pre>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
