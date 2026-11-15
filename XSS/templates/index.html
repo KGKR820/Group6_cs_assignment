@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored XSS Lab</title>
+</head>
+<body>
+    <h2>Submit Comment</h2>
+
+    <form action="/comment" method="POST">
+        <textarea name="comment" placeholder="Enter comment" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+        <form action="/delete-comments" method="POST"
+      onsubmit="return confirm('Are you sure you want to delete all comments?');">
+
+    <button type="submit">
+        Delete All Comments
+    </button>
+
+    <a href="/comments">View Comments</a>
+</body>
+</html>

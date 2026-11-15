@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comments</title>
+</head>
+<body>
+
+    <h2>All Comments</h2>
+
+<!-- Vulnearability -->
+ 
+    {% for comment in comments %}
+        <p>{{ comment[0] | safe }}</p>
+    {% endfor %}
+
+    <a href="/">Go Back</a>
+
+</form>
+
+</body>
+</html>
