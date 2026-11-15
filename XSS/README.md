@@ -1,5 +1,69 @@
 # Stored Cross-Site Scripting (Stored XSS) — Security Lab
 
+## Author
+
+| Field | Details |
+|---|---|
+| **Name** | Victor Daniel |
+| **Roll Number** | IIT2024014 |
+| **Category** | XSS (Cross-Site Scripting) |
+| **Variant** | Stored XSS  |
+
+---
+# Run
+## Installation and Execution
+
+Follow the steps below to set up and run the Stored Cross-Site Scripting (XSS) implementation locally.
+### Isolated environment:
+Create an isolated Python virtual environment:
+
+```bash
+python -m venv venv
+
+source venv/bin/activate
+```
+### Install Dependencies
+
+Install all required Python packages using the requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+The following dependencies will be installed:
+
+- FastAPI
+- Uvicorn
+- Jinja2
+- Python-multipart
+- Pydantic
+- Bleach
+
+### Run the Application
+
+Start the FastAPI development server using Uvicorn:
+
+```bash
+uvicorn app:app --reload
+```
+
+### Access the Application
+
+Open your web browser and visit:
+
+- **Home Page:** http://127.0.0.1:8000/
+- **Comments Page:** http://127.0.0.1:8000/comments
+- **API Documentation:** http://127.0.0.1:8000/docs
+
+
+### Notes
+
+- The SQLite database (`comments.db`) stores submitted comments.
+- If the database does not exist, the application should initialize it when configured to do so.
+- Keep the virtual environment activated while running the application.
+- The `--reload` option automatically restarts the development server when source files change.
+- This implementation is intended for local testing and educational demonstration of Stored XSS vulnerabilities and their mitigation techniques.
+
 ## 1. Objective
 
 Demonstrate how Stored Cross-Site Scripting (Stored XSS) occurs when an application saves attacker-controlled input and later renders that input as executable HTML or JavaScript in another user's browser.
@@ -217,17 +281,6 @@ Apart from the primary prevention techniques, several additional security measur
 No single mitigation technique can completely eliminate Stored XSS. A combination of input validation, context-aware output encoding, HTML sanitization, framework autoescaping, and CSP provides stronger protection. For FastAPI applications using Jinja2, keeping automatic escaping enabled and avoiding unsafe rendering of user-generated content are particularly important.
 
 ---
-# Stored Cross-Site Scripting (Stored XSS)
 
-## ME
-
-| Field | Details |
-|---|---|
-| **Name** | Victor Daniel |
-| **Roll Number** | IIT2024014 |
-| **Category** | XSS (Cross-Site Scripting) |
-| **Variant** | Stored XSS (Persistent Cross-Site Scripting) |
-
----
 
 

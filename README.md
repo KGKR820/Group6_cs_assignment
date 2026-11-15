@@ -24,7 +24,7 @@ Each member is responsible for implementing and explaining their assigned vulner
 | Member Name | Roll Number | Category | Variant |
 |---|---|---|---|
 | Durga Surya Raghuram Gadepalli | IIT2024093| CSRF | GET-Based Forged Action |
-| [Friend 2] | [Roll Number] | [Category] | [Variant] |
+| Victor Daniel | IIT2024014 | XSS | Stored XSS |
 | [Friend 3] | [Roll Number] | [Category] | [Variant] |
 | [Friend 4] | [Roll Number] | [Category] | [Variant] |
 |[Friend 5]         | [Roll number] |[Category]|  [Variant]|
@@ -51,9 +51,14 @@ Web-Server-Security/
 │   └── screenshots/
 │
 ├── XSS/
-│   ├── source_code
+│   ├── app.py
+│   ├── comments.db
 │   ├── README.md
-│   └── screenshots/
+│   ├── requirements.txt
+│   └── templates/
+│       ├── comments.html
+│       ├── index.html
+│       └── search.html
 │
 └── README.md
 ```
